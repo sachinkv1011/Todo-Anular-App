@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <table class="table">
+                        <tr>
+                            <td>userId</td>
+                            <td>id</td>
+                            <td>title</td>
+                            <td>completed</td>
+                            
+                        </tr>
+                        <tr *ngFor="let i of todos">
+                            <td>{{i.userId}}</td>
+                            <td>{{i.id}}</td>
+                            <td>{{i.title}}</td>
+                            <td>{{i.completed}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
