@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ViewTodoComponent {
   todos:any=[
-    [
+    
       {
         "userId": 1,
         "id": 1,
@@ -1209,6 +1209,6 @@ export class ViewTodoComponent {
         "completed": false
       }
     ]
-  ]
+  
 
 }
