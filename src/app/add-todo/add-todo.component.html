@@ -5,22 +5,22 @@
             <div class="row g-3 mt-3">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">UserId</label>
-                    <input type="text" class="form-control">
+                    <input name="userId" [(ngModel)]="userId" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Id</label>
-                    <input type="text" class="form-control">
+                    <input name="id" [(ngModel)]="id" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Title</label>
-                    <input type="text" class="form-control">
+                    <input name="title" [(ngModel)]="title" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Completed task</label>
-                    <input type="text" class="form-control">
+                    <input name="completed" [(ngModel)]="completed" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <button class="btn btn-primary " routerLink="/view">Submit</button>
+                    <button (click)="todo()" class="btn btn-primary " routerLink="/view">Submit</button>
                 </div>
             </div>
         </div>
